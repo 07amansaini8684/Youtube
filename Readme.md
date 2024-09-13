@@ -1,0 +1,1 @@
+this project is about making youtube like platform , it is mainly backed project bruuuuhhhhhhhhhh
