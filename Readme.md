@@ -12,3 +12,12 @@ remove password and refresh token fileld from response
 check for user creation 
 return response
 
+// login steps
+get user details form frontend
+validation - not empty
+check if user exists : username , email
+check for password match
+check for accses refresh token match
+send token as cookie
+
+
