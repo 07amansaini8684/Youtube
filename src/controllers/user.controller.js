@@ -162,7 +162,7 @@ const refreshAccessToken = asynchandler(async (req, res) => {
   const incomingRefreshToken =
     req.cookies.refreshToken || req.body.refreshToken;
 
-  if (incomingRefreshToken) {
+  if (!incomingRefreshToken) {
     throw new ApiError(401, "UnAuthorized request");
   }
 
@@ -197,5 +197,7 @@ const refreshAccessToken = asynchandler(async (req, res) => {
     throw new ApiError(401, error?.message || "Invalid refresh token");
   }
 });
+
+
 
 export { registerUser, loginUser, logoutUser, refreshAccessToken };
